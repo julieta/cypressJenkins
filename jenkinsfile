@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage("Instalacion de dependencia"){
+          steps{  
+            bat npm ci
+          }
+        }
+    }
+}
